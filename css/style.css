@@ -216,11 +216,11 @@ div#preloader {
 }
 
 .area-padding {
-  padding: 70px 0px 80px;
+  padding: 40px 0px 40px;
 }
 
 .area-padding-2 {
-  padding: 70px 0px 50px;
+  padding: 40px 0px 40px;
 }
 
 .padding-2 {
@@ -2351,6 +2351,18 @@ span.email-notes {
   margin: 0;
   padding-top: 30px;
 }
+
+.responsiveCal {
+ 
+  position: relative; padding-bottom: 55%; height: 0; overflow: hidden;
+   
+  }
+   
+  .responsiveCal iframe {
+   
+  position: absolute; top:0; left: 0; width: 100%; height: 100%; padding: 25px;
+   
+  }
 
 /*----------------------------------------
  .End CSS
