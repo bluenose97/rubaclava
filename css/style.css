@@ -1575,7 +1575,6 @@ div#preloader {
 }
 
 .single-blog .ready-btn:hover {
-  border: 1px solid #e65959;
   color: #fff;
 }
 
@@ -2007,7 +2006,6 @@ div#preloader {
 }
 
 .ready-btn {
-  border: 1px solid #fff;
   border-radius: 30px;
   color: #fff;
   cursor: pointer;
@@ -2015,7 +2013,7 @@ div#preloader {
   font-size: 17px;
   font-weight: 600;
   margin-top: 30px;
-  padding: 12px 40px;
+  padding: 10px 15px;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.4s ease 0s;
@@ -2025,7 +2023,6 @@ div#preloader {
 .ready-btn:hover {
   color: #fff;
   background: #e65959;
-  border: 1px solid #e65959;
   text-decoration: none;
 }
 
@@ -2370,6 +2367,11 @@ span.email-notes {
 
   .single-well{
     text-align: center
+  }
+
+  .fa-facebook, .fa-instagram {
+    color: #FFF;
+    font-size: 30px;
   }
 /*----------------------------------------
  .End CSS
