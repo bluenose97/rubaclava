@@ -2368,6 +2368,9 @@ span.email-notes {
     padding-bottom: 0;
   }
 
+  .single-well{
+    text-align: center
+  }
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
