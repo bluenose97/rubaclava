@@ -2373,6 +2373,10 @@ span.email-notes {
     color: #FFF;
     font-size: 30px;
   }
+
+  .alignBottom{
+    padding-top: 25vh;
+  }
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
