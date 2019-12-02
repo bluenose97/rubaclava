@@ -229,7 +229,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.open(info.event.url);
       }
     },
-    displayEventTime: false,
     defaultView: 'listYear',
     contentHeight: 'auto',
     googleCalendarApiKey: 'AIzaSyDP6V8Owv42F2t_rct5yRk1C-B8IoqtyjY',
