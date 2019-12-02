@@ -217,18 +217,30 @@ document.addEventListener('DOMContentLoaded', function() {
   let calendar = new FullCalendar.Calendar(calendarEl, {
     plugins: [ 'interaction', 'dayGrid', 'list','googleCalendar' ],
     header: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'listYear,dayGridMonth,'
+      left: 'title',
+      right: 'today prev,next',
+      center: '',
+      //right: 'listYear,dayGridMonth,'
+    },
+    eventClick: function(info) {
+      info.jsEvent.preventDefault(); // don't let the browser navigate
+  
+      if (info.event.url) {
+        window.open(info.event.url);
+      }
     },
     displayEventTime: false,
     defaultView: 'listYear',
+    contentHeight: 'auto',
     googleCalendarApiKey: 'AIzaSyDP6V8Owv42F2t_rct5yRk1C-B8IoqtyjY',
     events: {
-      googleCalendarId: 'rubaclava.orchestra@gmail.com'
-    }
+      googleCalendarId: 'rubaclava.orchestra@gmail.com',
+      color: '#e65959',
+      textColor: 'black',
+    },
+    
+
   });
 
   calendar.render();
 });
-

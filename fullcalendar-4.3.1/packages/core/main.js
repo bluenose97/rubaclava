@@ -4591,17 +4591,17 @@ Docs & License: https://fullcalendar.io/
             next: 'next',
             prevYear: 'prev year',
             nextYear: 'next year',
-            year: 'year',
-            today: 'today',
-            month: 'month',
-            week: 'week',
-            day: 'day',
-            list: 'list'
+            year: 'Year',
+            today: 'Reset to current year',
+            month: 'Month',
+            week: 'Week',
+            day: 'Day',
+            list: 'List'
         },
         weekLabel: 'W',
         allDayText: 'all-day',
         eventLimitText: 'more',
-        noEventsMessage: 'No events to display'
+        noEventsMessage: 'At the moment there are no events planned for the selected year. Stay tuned!'
     };
     function parseRawLocales(explicitRawLocales) {
         var defaultCode = explicitRawLocales.length > 0 ? explicitRawLocales[0].code : 'en';

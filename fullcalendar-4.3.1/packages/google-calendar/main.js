@@ -136,7 +136,7 @@ Docs & License: https://fullcalendar.io/
         });
     }
     function gcalItemToRawEventDef(item, gcalTimezone) {
-        var url = item.htmlLink || null;
+        var url = item.description || null;
         // make the URLs for each event show times in the correct timezone
         if (url && gcalTimezone) {
             url = injectQsComponent(url, 'ctz=' + gcalTimezone);

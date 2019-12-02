@@ -2387,6 +2387,7 @@ span.email-notes {
   #calendar {
     max-width: 900px;
     margin: 40px auto;
+    margin-bottom: 80px;
   }
 /*----------------------------------------
  .End CSS
