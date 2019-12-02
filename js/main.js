@@ -210,3 +210,25 @@
   }
 
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  let calendar = new FullCalendar.Calendar(calendarEl, {
+    plugins: [ 'interaction', 'dayGrid', 'list','googleCalendar' ],
+    header: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'listYear,dayGridMonth,'
+    },
+    displayEventTime: false,
+    defaultView: 'listYear',
+    googleCalendarApiKey: 'AIzaSyDP6V8Owv42F2t_rct5yRk1C-B8IoqtyjY',
+    events: {
+      googleCalendarId: 'rubaclava.orchestra@gmail.com'
+    }
+  });
+
+  calendar.render();
+});
+

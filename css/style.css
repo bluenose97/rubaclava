@@ -2383,6 +2383,11 @@ span.email-notes {
     padding-bottom: 20px;
     font-size: 16px;
   }
+
+  #calendar {
+    max-width: 900px;
+    margin: 40px auto;
+  }
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
