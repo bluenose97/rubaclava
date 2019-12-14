@@ -14,11 +14,6 @@
   /* unlike core views, leverage browser RTL */
 }
 
-.fc-list-view {
-  border-width: 1px;
-  border-style: solid;
-}
-
 /* table resets */
 .fc .fc-list-table {
   table-layout: auto;
@@ -110,9 +105,4 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-}
-
-.fc-unthemed .fc-list-empty {
-  /* theme will provide own background */
-  background-color: #eee;
 }

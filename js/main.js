@@ -213,6 +213,25 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
+  function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
+  }
+
+  var startDate = new Date();
+  var endDate = new Date();
+  endDate.setFullYear(endDate.getFullYear() + 5);
+  startDate = formatDate(startDate);
+  endDate = formatDate(endDate);
 
   let calendar = new FullCalendar.Calendar(calendarEl, {
     plugins: [ 'interaction', 'dayGrid', 'list','googleCalendar' ],
@@ -237,9 +256,10 @@ document.addEventListener('DOMContentLoaded', function() {
       color: '#e65959',
       textColor: 'black',
     },
-    
-
   });
-
+  calendar.setOption('validRange', {
+    start: startDate,
+    end: endDate
+  });
   calendar.render();
 });
