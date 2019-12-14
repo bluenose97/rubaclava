@@ -2021,9 +2021,7 @@ div#preloader {
 }
 
 .ready-btn:hover {
-  color: #fff;
-  background: #e65959;
-  text-decoration: none;
+  color: #e65959;
 }
 
 .post-img {
@@ -2372,6 +2370,14 @@ span.email-notes {
   .fa-facebook, .fa-instagram {
     color: #FFF;
     font-size: 30px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  .fa-facebook:hover, .fa-instagram:hover {
+    color: #e65959;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
 
   .alignBottom{
