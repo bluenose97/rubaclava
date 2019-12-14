@@ -720,9 +720,8 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 
 .fc-button-primary:hover {
   color: #fff;
-  background-color: #e65959;
-  border-color: #e65959;
-  opacity: 0.65;
+  background-color: #a63e3e;
+  border-color: #a63e3e;
 }
 
 .fc-button-primary:focus {
